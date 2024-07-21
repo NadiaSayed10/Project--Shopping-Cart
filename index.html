@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Shopping Cart</title>
+   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+   <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+   <header class="bg-primary text-white text-center p-4">
+       <div class="container">
+           <h1>Wig Boutique</h1>
+           <nav class="nav justify-content-center">
+               <a class="nav-link text-white" href="#">Home</a>
+               <a class="nav-link text-white" href="#">Shop</a>
+               <a class="nav-link text-white" href="#">Cart</a>
+               <a class="nav-link text-white" href="#">Contact</a>
+           </nav>
+       </div>
+   </header>
+
+   <main class="container mt-5">
+       <h2>Shopping Cart</h2>
+       <section class="cart-items mb-5 p-4 bg-white rounded shadow-sm">
+           <div class="cart-item row mb-3">
+               <div class="col-md-2">
+                   <img src="./Pictures/CurlyHair.jpg" alt="Wig 1" class="img-fluid">
+               </div>
+               <div class="col-md-10">
+                   <h3>Curly Hair</h3>
+                   <p>Price: $100</p>
+                   <div class="form-group">
+                       <label for="quantity">Quantity:</label>
+                       <input type="number" id="quantity" name="quantity" class="form-control w-25" min="1" value="1">
+                   </div>
+                   <button class="btn btn-primary" onclick="addToCart('Wig Name')">Add to Cart</button>
+                   <button class="btn btn-danger">Remove</button>
+               </div>
+           </div>
+           
+           <div class="cart-item row mb-3">
+            <div class="col-md-2">
+                <img src="./Pictures/Straight Hair.jpg" alt="Wig 2" class="img-fluid">
+            </div>
+            <div class="col-md-10">
+                <h3>Straight Hair</h3>
+                <p>Price: $100</p>
+                <div class="form-group">
+                    <label for="quantity">Quantity:</label>
+                    <input type="number" id="quantity" name="quantity" class="form-control w-25" min="1" value="1">
+                </div>
+                <button class="btn btn-primary" onclick="addToCart('Wig Name')">Add to Cart</button>
+                <button class="btn btn-danger">Remove</button>
+            </div>
+        </div>
+       </section>
+
+       <section id="cart-contents" class="cart-contents mb-5 p-4 bg-white rounded shadow-sm">
+           <h3>Cart Contents</h3>
+       </section>
+
+       <section id="cart-summary" class="cart-summary mb-5 p-4 bg-white rounded shadow-sm">
+           <h3>Order Summary</h3>
+           <p>Subtotal: $0.00</p>
+           <p>Tax: $0.00</p>
+           <p>Total: $0.00</p>
+       </section>
+   </main>
+
+   <footer class="bg-primary text-white text-center p-4">
+       <div class="container">
+           <p>&copy; 2024 Wig Shop. All rights reserved.</p>
+       </div>
+   </footer>
+
+   
+   <script src="script.js"></script>
+</body>
+</html
+
+
+
+
+
+
+
+
+

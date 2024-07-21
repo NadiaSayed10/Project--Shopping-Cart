@@ -1,0 +1,46 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+}
+
+header {
+    background-color:#007bff;
+    color: white;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+main h2 {
+    color: #007bff;
+    margin-bottom: 30px;
+}
+
+.cart-item img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.cart-item h3 {
+    color: #007bff;
+}
+
+.cart-item .btn {
+    margin-top: 10px;
+}
+
+footer {
+    background-color: #007bff;
+    color: white;
+}
+
+footer p {
+    margin: 0;
+}
